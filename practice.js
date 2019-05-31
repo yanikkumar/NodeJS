@@ -31,8 +31,7 @@ app.use(function (req, res, next) {
     }
 });
 
-app.get('/india', function (req, res, next) {
-    res.json("We have arrived! yeahh!!");
+app.get('/india', function (req, res, next) {      
 });
 */
 
@@ -49,7 +48,8 @@ app.get('/india/:name', enteringBorder, function (req, res, next) {
     res.json("We have arrived! yeahh!!");
 });
 
-app.listen(5000, function (err) {
+app.listen(5000, function (err) {        // to make port available to work on 5000
+    res.json("We have arrived! yeahh!!");
     if (err) {
         console.log(err);
     }
